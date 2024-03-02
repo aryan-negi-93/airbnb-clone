@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>listing</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="listing.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- Font-awesome cdn link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+</head>
+
+<body>
+
+  <!-- this is headr section  -->
+
+  <div class="header">
+    <div class="container">
+      <header>
+        <div class="cls13a9" style="flex: 1 0 140px;">
+          <div class="logo">
+            <img src="img/logo.png" alt="">
+          </div>
+
+
+          <div class="logo_min" style="display: none;">
+            <img src="https://seeklogo.com/images/A/airbnb-logo-1D03C48906-seeklogo.com.png" alt="">
+          </div>
+
+        </div>
+
+        <div class="cls13a9">
+          <div class="c_dic">
+            <ul>
+              <li>Start your search</li>
+              <li></li>
+              <li></li>
+              <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cls13a9" style="flex: 1 0 140px;">
+
+          <div class="d_div">
+            <ul>
+              <li id="clihover" style="font-size: 14px;">Airbnb your home</li>
+              <li id="glb"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.01978 0.25C10.0788 0.255298 12.0515 1.07763 13.5046 2.53638C14.9577 3.99512 15.7724 5.971 15.7698 8.03C15.7629 10.041 14.9746 11.9706 13.5713 13.4111C12.1681 14.8516 10.2599 15.6903 8.24977 15.75H7.99978C5.98872 15.7458 4.05806 14.96 2.61565 13.5586C1.17324 12.1573 0.332049 10.2501 0.269775 8.24V7.99C0.272425 5.93631 1.09011 3.96763 2.54323 2.51639C3.99635 1.06514 5.96608 0.249998 8.01978 0.25ZM9.96978 8.75H6.06978C6.21978 11.65 7.23978 14.09 7.94978 14.25H8.01978C8.69978 14.25 9.73978 11.88 9.94978 9.02L9.96978 8.75ZM14.2298 8.75H11.4698C11.3798 10.71 10.9398 12.53 10.2898 13.83C11.3037 13.4336 12.1967 12.7795 12.8807 11.9325C13.5646 11.0855 14.0158 10.0747 14.1898 9L14.2298 8.75ZM4.55978 8.75H1.81978C1.95579 9.87388 2.39403 10.9398 3.08785 11.8344C3.78166 12.729 4.70507 13.4186 5.75978 13.83C5.07271 12.3531 4.67876 10.757 4.59978 9.13L4.56978 8.75H4.55978ZM5.75978 2.17L5.63978 2.22C4.61244 2.64311 3.71622 3.33201 3.04314 4.21598C2.37005 5.09995 1.94437 6.14713 1.80978 7.25H4.55978C4.64978 5.42 5.03978 3.71 5.61978 2.44L5.75978 2.17ZM8.00978 1.75C7.30978 1.75 6.22978 4.26 6.06978 7.25H9.96978C9.81978 4.35 8.78978 1.91 8.07978 1.75H8.00978ZM10.2898 2.18L10.3198 2.23C11.0353 3.80947 11.4264 5.51655 11.4698 7.25H14.2198C14.0809 6.12971 13.6426 5.06757 12.951 4.17536C12.2594 3.28315 11.3401 2.59385 10.2898 2.18Z"
+                    fill="#222222" />
+                </svg></li>
+              <li>
+
+                <div class="menu">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                    focusable="false"
+                    style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                    <g fill="none">
+                      <path d="M2 16h28M2 24h28M2 8h28"></path>
+                    </g>
+                  </svg>
+                </div>
+
+                <div class="user_img">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M16.02 0.699951C7.57997 0.699951 0.719971 7.55995 0.719971 16C0.719971 24.44 7.57997 31.2999 16.02 31.2999C24.46 31.2999 31.32 24.44 31.32 16C31.32 7.55995 24.46 0.699951 16.02 0.699951ZM16.02 28.7C12 28.7 8.41997 26.82 6.08997 23.8899C7.71157 21.7686 9.97318 20.2258 12.54 19.49C11.6148 18.9035 10.8528 18.0927 10.3248 17.1329C9.79681 16.1731 9.51996 15.0954 9.51997 14C9.51997 12.276 10.2048 10.6227 11.4238 9.40376C12.6428 8.18477 14.2961 7.49995 16.02 7.49995C17.7439 7.49995 19.3972 8.18477 20.6162 9.40376C21.8351 10.6227 22.52 12.276 22.52 14C22.5207 15.0969 22.2443 16.1763 21.7163 17.1378C21.1884 18.0993 20.426 18.9119 19.5 19.5C22.0671 20.2351 24.3289 21.778 25.95 23.9C24.7636 25.3967 23.2542 26.6059 21.5347 27.4371C19.8151 28.2684 17.9299 28.7 16.02 28.7Z"
+                      fill="#717171" />
+                  </svg>
+                </div>
+
+              </li>
+            </ul>
+
+
+
+          </div>
+
+        </div>
+
+      </header>
+    </div>
+  </div>
+
+  <!-- end header section  -->
+
+  <!-- this is main section  -->
+
+  <section>
+    <div class="container">
+
+
+      <div class="title">
+        <h1 class=" pt-4 fw-medium">Sunlight filled 3BR -Minutes to India Gate</h1>
+
+        <div class="d-flex  justify-content-between">
+          <ul class="d-flex ps-0">
+            <li><i class="fa-solid fa-star me-2"></i>4.89</li>
+            <li class="me-2">18 reviews </li>
+            <li><span class="me-2"> · </span></li>
+            <li class="me-2">Superhost</li>
+            <li><span class="me-2"> · </span></li>
+            <li class="me-2"><a class="text-decoration-none"" href="">New Delhi, Delhi, India</a></li>
+          </ul>
+
+          <ul class=" d-flex" style="gap: 15px;">
+            <li class="d-flex align-items-center "><svg class="me-2" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false"
+                style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 2; overflow: visible;">
+                <g fill="none">
+                  <path d="M27 18v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-9M16 3v23V3zM6 13l9.3-9.3a1 1 0 0 1 1.4 0L26 13">
+                  </path>
+                </g>
+              </svg><span>share</span></li>
+            <li class="d-flex align-items-center"><svg class="me-2" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false"
+                style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 2; overflow: visible;">
+                <path
+                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z">
+                </path>
+              </svg><span>save</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="images-section">
+
+        <div class="images">
+
+          <div class="img_sec1">
+            <div class="img">
+              <img src="img/gym_boy.png.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="img_sec2">
+
+            <div class="img1">
+              <div class="img">
+                <img src="img/gym_boy111.png.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="img2 mt-2">
+              <div class="img">
+                <img src="img/gym_girl.png.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="img_sec3">
+
+            <div class="img_main">
+              <div class="img1">
+                <div class="img">
+                  <img src="img/gym_girl23.png.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="img2 mt-2">
+                <div class="img">
+                  <img src="img/gym_girl098.png.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="d-flex">
+        <div class="details_section col-7 mt-2">
+
+          <div style="padding: 32px 0px;" class="d-flex  justify-content-between cls34es">
+
+            <div>
+              <h1 class="fw-medium" style="font-size: 22px; ">Entire apartment hosted by BoBo Stays</h1>
+
+              <ol class="d-flex list-unstyled">
+                <li class="me-2">6 guests</li>
+                <li class="me-2"> · </li>
+                <li class="me-2">3 bedrooms</li>
+                <li class="me-2"> · </li>
+                <li class="me-2">3 beds</li>
+                <li class="me-2"> · </li>
+                <li class="me-2">3 bathrooms</li>
+              </ol>
+
+            </div>
+
+            <div>
+              <div class="d-flex  justify-content-between">
+                <div class="d-flex " style="width: 56px; height: 56px;">
+                  <img class="rounded-circle" src="img/gym_girl.png.jpg"
+                    width="100%" alt="">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="d-flex details_info">
+
+            <div class="d-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                <path
+                  d="M16 17a7 7 0 1 1 0 14 7 7 0 0 1 0-14zm0 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM25.67.33a2 2 0 0 1 2 1.85v6.54a2 2 0 0 1-.97 1.7l-.14.08-9.67 4.84a2 2 0 0 1-1.61.07l-.17-.07-9.67-4.84a2 2 0 0 1-1.1-1.62V2.33a2 2 0 0 1 1.84-2h.15zm0 2H6.33v6.39L16 13.55l9.67-4.83z">
+                </path>
+              </svg>
+            </div>
+
+            <div>
+              <h3 class="fs-6 fw-semibold">BoBo Stays is a Superhost</h3>
+              <span>Superhosts are experienced, highly rated Hosts.</span>
+            </div>
+
+          </div>
+
+          <div class="d-flex details_info  details_info_sec">
+
+            <div class="d-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                <path
+                  d="M13.7 13.93a4 4 0 0 1 5.28.6l.29.37 4.77 6.75a4 4 0 0 1 .6 3.34 4 4 0 0 1-4.5 2.91l-.4-.08-3.48-.93a1 1 0 0 0-.52 0l-3.47.93a4 4 0 0 1-2.94-.35l-.4-.25a4 4 0 0 1-1.2-5.2l.23-.37 4.77-6.75a4 4 0 0 1 .96-.97zm3.75 1.9a2 2 0 0 0-2.98.08l-.1.14-4.84 6.86a2 2 0 0 0 2.05 3.02l.17-.04 4-1.07a1 1 0 0 1 .5 0l3.97 1.06.15.04a2 2 0 0 0 2.13-2.97l-4.95-7.01zM27 12a4 4 0 1 1 0 8 4 4 0 0 1 0-8zM5 12a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm22 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM5 14a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm6-10a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm10 0a4 4 0 1 1 0 8 4 4 0 0 1 0-8zM11 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z">
+                </path>
+              </svg>
+            </div>
+
+            <div>
+              <h3 class="fs-6 fw-semibold">Furry friends welcome</h3>
+              <span>Bring your pets along for the stay.</span>
+            </div>
+
+          </div>
+
+          <div id="DESCRIPTION">
+            <p class="mb-0">Enjoy a stylish experience at this centrally-located place 3 BR with stunning house. Each
+              bedroom has
+              balcony and en-suite bathroom and a smart TV in each room, 24 hour power back up, parking, security and a
+              tonne of natural light through large glass windows all day long. Minutes from India Gate this is a ideal
+              space for anyone looking for a stylish, spacious place with green foliage views from 2 of the Bedroom’s
+              large glass windows.</p>
+
+            <span>...</span>
+
+            <div class="d-flex show_more_btn mt-3">
+              <div>Show more</div>
+              <div><svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false"
+                  style="height: 12px; width: 12px; display: block; fill: var(--f-k-smk-x);">
+                  <path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z"
+                    fill-rule="evenodd"></path>
+                </svg></div>
+
+            </div>
+
+          </div>
+
+
+          <div id="AMENITIES">
+
+            <div class="heading">What this place offers</div>
+
+            <div class="list">
+              <ul>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                    focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                    <path
+                      d="M26 1a5 5 0 0 1 5 5c0 6.39-1.6 13.19-4 14.7V31h-2V20.7c-2.36-1.48-3.94-8.07-4-14.36v-.56A5 5 0 0 1 26 1zm-9 0v18.12c2.32.55 4 3 4 5.88 0 3.27-2.18 6-5 6s-5-2.73-5-6c0-2.87 1.68-5.33 4-5.88V1zM2 1h1c4.47 0 6.93 6.37 7 18.5V21H4v10H2zm14 20c-1.6 0-3 1.75-3 4s1.4 4 3 4 3-1.75 3-4-1.4-4-3-4zM4 3.24V19h4l-.02-.96-.03-.95C7.67 9.16 6.24 4.62 4.22 3.36L4.1 3.3zm19 2.58v.49c.05 4.32 1.03 9.13 2 11.39V3.17a3 3 0 0 0-2 2.65zm4-2.65V17.7c.99-2.31 2-7.3 2-11.7a3 3 0 0 0-2-2.83z">
+                    </path>
+                  </svg>
+                  <div><span>Kitchen</span></div>
+                </li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                    focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                    <path
+                      d="M16 20.33a3.67 3.67 0 1 1 0 7.34 3.67 3.67 0 0 1 0-7.34zm0 2a1.67 1.67 0 1 0 0 3.34 1.67 1.67 0 0 0 0-3.34zM16 15a9 9 0 0 1 8.04 4.96l-1.51 1.51a7 7 0 0 0-13.06 0l-1.51-1.51A9 9 0 0 1 16 15zm0-5.33c4.98 0 9.37 2.54 11.94 6.4l-1.45 1.44a12.33 12.33 0 0 0-20.98 0l-1.45-1.45A14.32 14.32 0 0 1 16 9.66zm0-5.34c6.45 0 12.18 3.1 15.76 7.9l-1.43 1.44a17.64 17.64 0 0 0-28.66 0L.24 12.24c3.58-4.8 9.3-7.9 15.76-7.9z">
+                    </path>
+                  </svg>
+                  <div><span>Wifi</span></div>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                    focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                    <path
+                      d="M26 2a1 1 0 0 1 .92.61l.04.12 2 7a1 1 0 0 1-.85 1.26L28 11h-3v5h6v2h-2v13h-2v-2.54a3.98 3.98 0 0 1-1.73.53L25 29H7a3.98 3.98 0 0 1-2-.54V31H3V18H1v-2h5v-4a1 1 0 0 1 .88-1h.36L6.09 8.4l1.82-.8L9.43 11H12a1 1 0 0 1 1 .88V16h10v-5h-3a1 1 0 0 1-.99-1.16l.03-.11 2-7a1 1 0 0 1 .84-.72L22 2h4zm1 16H5v7a2 2 0 0 0 1.7 1.98l.15.01L7 27h18a2 2 0 0 0 2-1.85V18zm-16-5H8v3h3v-3zm14.24-9h-2.49l-1.43 5h5.35l-1.43-5z">
+                    </path>
+                  </svg>
+                  <div><span>Dedicated workspace</span></div>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                    focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                    <path
+                      d="M26 19a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 18a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm20.7-5 .41 1.12A4.97 4.97 0 0 1 30 18v9a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-2H8v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9c0-1.57.75-2.96 1.89-3.88L4.3 13H2v-2h3v.15L6.82 6.3A2 2 0 0 1 8.69 5h14.62c.83 0 1.58.52 1.87 1.3L27 11.15V11h3v2h-2.3zM6 25H4v2h2v-2zm22 0h-2v2h2v-2zm0-2v-5a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v5h24zm-3-10h.56L23.3 7H8.69l-2.25 6H25zm-15 7h12v-2H10v2z">
+                    </path>
+                  </svg>
+                  <div><span>Free parking on premises</span></div>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                    focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                    <path
+                      d="M13.7 13.93a4 4 0 0 1 5.28.6l.29.37 4.77 6.75a4 4 0 0 1 .6 3.34 4 4 0 0 1-4.5 2.91l-.4-.08-3.48-.93a1 1 0 0 0-.52 0l-3.47.93a4 4 0 0 1-2.94-.35l-.4-.25a4 4 0 0 1-1.2-5.2l.23-.37 4.77-6.75a4 4 0 0 1 .96-.97zm3.75 1.9a2 2 0 0 0-2.98.08l-.1.14-4.84 6.86a2 2 0 0 0 2.05 3.02l.17-.04 4-1.07a1 1 0 0 1 .5 0l3.97 1.06.15.04a2 2 0 0 0 2.13-2.97l-4.95-7.01zM27 12a4 4 0 1 1 0 8 4 4 0 0 1 0-8zM5 12a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm22 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM5 14a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm6-10a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm10 0a4 4 0 1 1 0 8 4 4 0 0 1 0-8zM11 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z">
+                    </path>
+                  </svg>
+                  <div><span>Pets allowed</span></div>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                    focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                    <path
+                      d="M9 29v-2h2v-2H6a5 5 0 0 1-5-4.78V8a5 5 0 0 1 4.78-5H26a5 5 0 0 1 5 4.78V20a5 5 0 0 1-4.78 5H21v2h2v2zm10-4h-6v2h6zm7-20H6a3 3 0 0 0-3 2.82V20a3 3 0 0 0 2.82 3H26a3 3 0 0 0 3-2.82V8a3 3 0 0 0-2.82-3z">
+                    </path>
+                  </svg>
+                  <div><span>TV with standard cable/satellite</span></div>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                    focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                    <path
+                      d="M26.29 2a3 3 0 0 1 2.96 2.58c.5 3.56.75 7.37.75 11.42s-.25 7.86-.75 11.42a3 3 0 0 1-2.79 2.57l-.17.01H5.7a3 3 0 0 1-2.96-2.58C2.25 23.86 2 20.05 2 16s.25-7.86.75-11.42a3 3 0 0 1 2.79-2.57L5.7 2zm0 2H5.72a1 1 0 0 0-1 .86A80.6 80.6 0 0 0 4 16c0 3.96.24 7.67.73 11.14a1 1 0 0 0 .87.85l.11.01h20.57a1 1 0 0 0 1-.86c.48-3.47.72-7.18.72-11.14 0-3.96-.24-7.67-.73-11.14A1 1 0 0 0 26.3 4zM16 7a9 9 0 1 1 0 18 9 9 0 0 1 0-18zm-5.84 7.5c-.34 0-.68.02-1.02.07a7 7 0 0 0 13.1 4.58 9.09 9.09 0 0 1-6.9-2.37l-.23-.23a6.97 6.97 0 0 0-4.95-2.05zM16 9a7 7 0 0 0-6.07 3.5h.23c2.26 0 4.44.84 6.12 2.4l.24.24a6.98 6.98 0 0 0 6.4 1.9A7 7 0 0 0 16 9zM7 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                    </path>
+                  </svg>
+                  <div><span>Washing machine</span></div>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                    focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                    <path
+                      d="M26.29 2a3 3 0 0 1 2.96 2.58c.5 3.56.75 7.37.75 11.42s-.25 7.86-.75 11.42a3 3 0 0 1-2.79 2.57l-.17.01H5.7a3 3 0 0 1-2.96-2.58C2.25 23.86 2 20.05 2 16s.25-7.86.75-11.42a3 3 0 0 1 2.79-2.57L5.7 2zm0 2H5.72a1 1 0 0 0-1 .86A80.6 80.6 0 0 0 4 16c0 3.96.24 7.67.73 11.14a1 1 0 0 0 .87.85l.11.01h20.57a1 1 0 0 0 1-.86c.48-3.47.72-7.18.72-11.14 0-3.96-.24-7.67-.73-11.14a1 1 0 0 0-.87-.85zM16 7a9 9 0 1 1 0 18 9 9 0 0 1 0-18zm0 2a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm-4.8 5.58c1.36.2 2.64.8 3.68 1.75l.46.45a8.97 8.97 0 0 0 4.62 2.28 5.02 5.02 0 0 1-2.01 1.55 10.98 10.98 0 0 1-4.26-2.65 4.96 4.96 0 0 0-2.66-1.38 4.68 4.68 0 0 1 .17-2zm3.09-3.28c1.34.55 2.58 1.36 3.64 2.42a4.97 4.97 0 0 0 3 1.44 4.99 4.99 0 0 1-.07 2 6.97 6.97 0 0 1-4.11-1.8l-.47-.45a8.96 8.96 0 0 0-4.07-2.17 5 5 0 0 1 2.08-1.44zM7 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                    </path>
+                  </svg>
+                  <div> <span>Dryer</span></div>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                    focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                    <path
+                      d="M2.05 6.3 4 8.23V25a3 3 0 0 0 2.82 3h16.94l1.95 1.95c-.16.02-.33.04-.5.04L25 30H7a5 5 0 0 1-5-4.78V7c0-.24.02-.48.05-.7zm1.66-4 26 26-1.42 1.4-26-26 1.42-1.4zM25 2a5 5 0 0 1 5 4.78V25a5 5 0 0 1-.05.7L28 23.77V7a3 3 0 0 0-2.82-3H8.24L6.3 2.05c.16-.02.33-.04.5-.04L7 2h18zM11.1 17a5 5 0 0 0 3.9 3.9v2.03A7 7 0 0 1 9.07 17h2.03zm5.9 4.24 1.35 1.36a6.95 6.95 0 0 1-1.35.33v-1.69zM21.24 17h1.69c-.07.47-.18.92-.34 1.35L21.24 17zM17 9.07A7 7 0 0 1 22.93 15H20.9a5 5 0 0 0-3.9-3.9V9.07zm-7.6 4.58L10.76 15H9.07c.07-.47.18-.92.33-1.35zM15 9.07v1.69L13.65 9.4A6.95 6.95 0 0 1 15 9.07zM23 8a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                    </path>
+                  </svg>
+                  <div><span>Carbon monoxide alarm</span></div>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                    focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                    <path
+                      d="m3.49 7.73 1.44 1.44A12.94 12.94 0 0 0 3 16a13 13 0 0 0 19.82 11.07l1.45 1.44A14.93 14.93 0 0 1 16 31 15 15 0 0 1 3.49 7.73zm.22-5.44 26 26-1.42 1.42-26-26 1.42-1.42zM16 1a15 15 0 0 1 12.52 23.27l-1.45-1.45A12.94 12.94 0 0 0 29 16 13 13 0 0 0 16 3a12.94 12.94 0 0 0-6.83 1.93L7.74 3.5A14.93 14.93 0 0 1 16 1zm-4.9 16a5 5 0 0 0 3.9 3.9v2.03A7 7 0 0 1 9.07 17h2.03zm5.9 4.24 1.35 1.36a6.95 6.95 0 0 1-1.35.33v-1.69zM21.24 17h1.69c-.07.47-.18.92-.34 1.35L21.24 17zM17 9.07A7 7 0 0 1 22.93 15H20.9a5 5 0 0 0-3.9-3.9V9.07zm-7.6 4.58L10.76 15H9.07c.07-.47.18-.92.33-1.35zM15 9.07v1.69L13.65 9.4A6.95 6.95 0 0 1 15 9.07zM23 8a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                    </path>
+                  </svg>
+                  <div><span>Smoke alarm</span></div>
+                </li>
+              </ul>
+
+
+              <div id="Show_all_amenities">
+                <button>Show all 34 amenities</button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="price_details">
+
+          <div class="price_crd">
+
+            <div class="price_n_rating">
+              <ul class="d-flex  justify-content-between ps-0 mb-0">
+                <li class="d-flex align-items-center"><span>₹12,999</span>night</li>
+                <li class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                    aria-hidden="true" role="presentation" focusable="false"
+                    style="display: block; height: 12px; width: 12px; fill: currentcolor;">
+                    <path fill-rule="evenodd"
+                      d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                    </path>
+                  </svg><span>4.89 ·</span>
+                  <p class="mb-0 me-2"> 18 reviews</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="book_tab">
+
+              <div class="d-flex justify-content-between ">
+                <div class="checkIn w-50 ">
+                  <div class="heading">ChECK-IN</div>
+                  <div class="date">11/8/2023</div>
+                </div>
+                <div class="checkOut w-50">
+                  <div class="heading">CHECKOUT</div>
+                  <div class="date">11/13/2023</div>
+                </div>
+              </div>
+
+              <div class="Guests">
+
+                <div class="dropdown">
+                  <ul class="d-flex justify-content-between mb-0 ps-0 align-items-center">
+                    <li>
+                      <div id="guest">Guests</div><span>1 guest</span>
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"
+                        role="presentation" focusable="false"
+                        style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                        <path fill="none" d="M4 20 15.3 8.7a1 1 0 0 1 1.4 0L28 20"></path>
+                      </svg></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="Reserve_btn">
+              <button>
+                Reserve
+              </button>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center">
+              <span class="mt-3" style="font-size: 14px; text-align: center;">You won't be charged yet</span>
+            </div>
+
+            <div class="charges w-100">
+
+              <div class="d-flex w-100">
+                <ul class="d-flex justify-content-between mb-0 ps-0 w-100 mt-4">
+                  <li>₹12,999 x 5 nights</li>
+                  <li>₹64,995</li>
+                </ul>
+              </div>
+
+              <div class="d-flex w-100">
+                <ul class="d-flex justify-content-between mb-0 ps-0 w-100 mt-2">
+                  <li>Cleaning fee</li>
+                  <li>₹75</li>
+                </ul>
+              </div>
+
+              <div class="d-flex w-100">
+                <ul class="d-flex justify-content-between mb-0 ps-0 w-100 mt-2">
+                  <li>Airbnb service fee</li>
+                  <li>₹9,282</li>
+                </ul>
+              </div>
+
+              <hr>
+
+              <div class="total d-flex w-100">
+                <ul class="d-flex justify-content-between mb-0 ps-0 w-100">
+                  <li class="fw-semibold">Total before taxes</li>
+                  <li class="fw-semibold">₹75,027</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="reviews">
+
+        <div class="heading d-flex ">
+          <div class="d-flex justify-content-center"><svg class="me-2 " xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false"
+              style="display: block; height: 32px; width: 16px; fill: currentcolor;">
+              <path fill-rule="evenodd"
+                d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+              </path>
+            </svg></div>
+
+
+          <div class="d-flex me-2  rate">
+            <p class="d-flex me-2">4.89 · </p>
+
+            <p>18 reviews</p>
+          </div>
+
+        </div>
+
+
+        <div class="reviews_list justify-content-between ">
+
+
+
+
+          <div class="rev d-flex justify-content-between w-50 pe-3">
+            <div class="rev_title">Cleanliness</div>
+
+            <div class="rating_num d-flex justify-content-between d-flex">
+              <div class="rating-line d-flex align-items-center">
+                <span></span>
+                <p class="mb-0">5.0</p>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="rev d-flex justify-content-between w-50 pe-3">
+            <div class="rev_title">Accuracy</div>
+
+            <div class="rating_num d-flex justify-content-between d-flex">
+              <div class="rating-line d-flex align-items-center">
+                <span></span>
+                <p class="mb-0">4.9</p>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="rev d-flex justify-content-between w-50 pe-3">
+            <div class="rev_title">Check-in</div>
+
+            <div class="rating_num d-flex justify-content-between d-flex">
+              <div class="rating-line d-flex align-items-center">
+                <span></span>
+                <p class="mb-0">5.0</p>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="rev d-flex justify-content-between w-50 pe-3">
+            <div class="rev_title">Communication</div>
+
+            <div class="rating_num d-flex justify-content-between d-flex">
+              <div class="rating-line d-flex align-items-center">
+                <span></span>
+                <p class="mb-0">4.8</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="rev d-flex justify-content-between w-50 pe-3">
+            <div class="rev_title">Location</div>
+
+            <div class="rating_num d-flex justify-content-between d-flex">
+              <div class="rating-line d-flex align-items-center">
+                <span></span>
+                <p class="mb-0">5.0</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="rev d-flex justify-content-between w-50 pe-3">
+            <div class="rev_title">Value</div>
+
+            <div class="rating_num d-flex justify-content-between d-flex">
+              <div class="rating-line d-flex align-items-center">
+                <span></span>
+                <p class="mb-0">4.9</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="reviews_listitem_container">
+        <div class="reviews_listitem">
+
+          <div class="listitem d-flex ">
+
+            <div class="profile_sec d-flex align-items-center ">
+
+              <div class="profile_img me-3">
+                <img src="img/gym_boy.png.jpg" alt="">
+              </div>
+              <div class="user_name">
+                <h3>Agata</h3>
+                <span>Romania</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="rating_time d-flex align-items-center mt-3">
+
+            <div class="rating d-flex">
+              <div class="d-flex me-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"
+                  role="presentation" focusable="false"
+                  style="display: block; height: 9px; width: 9px; fill: var(--f-k-smk-x);">
+                  <path fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                  </path>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                  focusable="false" style="display: block; height: 9px; width: 9px; fill: var(--f-k-smk-x);">
+                  <path fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                  </path>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                  focusable="false" style="display: block; height: 9px; width: 9px; fill: var(--f-k-smk-x);">
+                  <path fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                  </path>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                  focusable="false" style="display: block; height: 9px; width: 9px; fill: var(--f-k-smk-x);">
+                  <path fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                  </path>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                  focusable="false" style="display: block; height: 9px; width: 9px; fill: var(--f-k-smk-x);">
+                  <path fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                  </path>
+                </svg></div>
+            </div>
+            <div class="me-2"> · </div>
+            <div class="rating_txt">
+              <span>2 weeks ago</span>
+            </div>
+          </div>
+
+          <div class="rating_text_user">
+            <span>
+              This was my second time staying here. Everything was perfect we had no issues. Great communication as
+              always. Thank you to Abhi, Amar and the team for doing such a great job!
+            </span>
+          </div>
+
+        </div>
+
+        <div class="reviews_listitem">
+
+          <div class="listitem d-flex ">
+
+            <div class="profile_sec d-flex align-items-center ">
+
+              <div class="profile_img me-3">
+                <img src="img/gym_boy.png.jpg" alt="">
+              </div>
+              <div class="user_name">
+                <h3>Agata</h3>
+                <span>Romania</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="rating_time d-flex align-items-center mt-3">
+
+            <div class="rating d-flex">
+              <div class="d-flex me-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"
+                  role="presentation" focusable="false"
+                  style="display: block; height: 9px; width: 9px; fill: var(--f-k-smk-x);">
+                  <path fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                  </path>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                  focusable="false" style="display: block; height: 9px; width: 9px; fill: var(--f-k-smk-x);">
+                  <path fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                  </path>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                  focusable="false" style="display: block; height: 9px; width: 9px; fill: var(--f-k-smk-x);">
+                  <path fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                  </path>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                  focusable="false" style="display: block; height: 9px; width: 9px; fill: var(--f-k-smk-x);">
+                  <path fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                  </path>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                  focusable="false" style="display: block; height: 9px; width: 9px; fill: var(--f-k-smk-x);">
+                  <path fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                  </path>
+                </svg></div>
+            </div>
+            <div class="me-2"> · </div>
+            <div class="rating_txt">
+              <span>2 weeks ago</span>
+            </div>
+          </div>
+
+          <div class="rating_text_user">
+            <span>
+              The place was amazing. I stayed here for almost a week with my parents, and it felt like a home away from
+              home. After a long day, the place makes you feel like you are in your own home.
+            </span>
+          </div>
+
+        </div>
+
+
+        <div class="reviews_listitem">
+
+          <div class="listitem d-flex ">
+
+            <div class="profile_sec d-flex align-items-center ">
+
+              <div class="profile_img me-3">
+                <img src="img/gym_boy.png.jpg" alt="">
+              </div>
+              <div class="user_name">
+                <h3>Agata</h3>
+                <span>Romania</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="rating_time d-flex align-items-center mt-3">
+
+            <div class="rating d-flex">
+              <div class="d-flex me-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"
+                  role="presentation" focusable="false"
+                  style="display: block; height: 9px; width: 9px; fill: var(--f-k-smk-x);">
+                  <path fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                  </path>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                  focusable="false" style="display: block; height: 9px; width: 9px; fill: var(--f-k-smk-x);">
+                  <path fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                  </path>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                  focusable="false" style="display: block; height: 9px; width: 9px; fill: var(--f-k-smk-x);">
+                  <path fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                  </path>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                  focusable="false" style="display: block; height: 9px; width: 9px; fill: var(--f-k-smk-x);">
+                  <path fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                  </path>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                  focusable="false" style="display: block; height: 9px; width: 9px; fill: var(--f-k-smk-x);">
+                  <path fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                  </path>
+                </svg></div>
+            </div>
+            <div class="me-2"> · </div>
+            <div class="rating_txt">
+              <span>2 weeks ago</span>
+            </div>
+          </div>
+
+          <div class="rating_text_user">
+            <span>
+              Thank you for your feedback. We are truly grateful :) We do not allow visitors to refrain guests from
+              making this a party place. It also causes discomfort to other guests in the building, safety concerns of
+              single lady travelers etc. Please let us know in advance in
+            </span>
+          </div>
+
+        </div>
+
+
+        <div class="reviews_listitem">
+
+          <div class="listitem d-flex ">
+
+            <div class="profile_sec d-flex align-items-center ">
+
+              <div class="profile_img me-3">
+                <img src="img/gym_boy.png.jpg" alt="">
+              </div>
+              <div class="user_name">
+                <h3>Agata</h3>
+                <span>Romania</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="rating_time d-flex align-items-center mt-3">
+
+            <div class="rating d-flex">
+              <div class="d-flex me-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"
+                  role="presentation" focusable="false"
+                  style="display: block; height: 9px; width: 9px; fill: var(--f-k-smk-x);">
+                  <path fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                  </path>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                  focusable="false" style="display: block; height: 9px; width: 9px; fill: var(--f-k-smk-x);">
+                  <path fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                  </path>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                  focusable="false" style="display: block; height: 9px; width: 9px; fill: var(--f-k-smk-x);">
+                  <path fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                  </path>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                  focusable="false" style="display: block; height: 9px; width: 9px; fill: var(--f-k-smk-x);">
+                  <path fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                  </path>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                  focusable="false" style="display: block; height: 9px; width: 9px; fill: var(--f-k-smk-x);">
+                  <path fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                  </path>
+                </svg></div>
+            </div>
+            <div class="me-2"> · </div>
+            <div class="rating_txt">
+              <span>2 weeks ago</span>
+            </div>
+          </div>
+
+          <div class="rating_text_user">
+            <span>
+              Hi , our stay was very comfortable. The house was very tastefully decorated. We booked it for two nights
+              but v liked it so much that v extended our stay . Every corner has plants n greenery n has wide
+            </span>
+          </div>
+
+        </div>
+
+
+        <div id="Show_reviews">
+          <button>Show all 18 reviews</button>
+        </div>
+
+      </div>
+
+      
+
+
+<div class="map_section" style="padding-top: 48px;
+padding-bottom: 48px;" >
+
+  <div class="heading" style="margin-bottom: 24px;" >
+    <h1  style="font-size: 22px; font-weight: 500;" >Where you’ll be</h1>
+  </div>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112137.77477463333!2d77.1915776!3d28.5605888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfce26ec085ef%3A0x441e32f4fa5002fb!2z4KSw4KWH4KShIOCkq-Cli-CksOCljeCknw!5e0!3m2!1smr!2sin!4v1698493691015!5m2!1smr!2sin" width="1124" height="480" style="border:0; margin: auto;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- this is footer section  -->
+ 
+  <div class="footer">
+    <footer class="ff6a337 dir dir-ltr">
+
+      <div class="c1dbtjd2 dir dir-ltr">
+        <div class="cff48sj dir dir-ltr">
+          <div>
+            <h2 class="h1m5veyr dir dir-ltr">Inspiration for future getaways</h2>
+            <div id="seo-link-section-tabbed-dense-grid">
+              <div class="t13ci49g dir dir-ltr">
+                <div class="t1a99pzb dir dir-ltr" data-testid="tab-list-wrapper">
+                  <div class="tnlo7wt dir dir-ltr" role="tablist"><button type="button"
+                      id="tab--seo-link-section-tabbed-dense-grid--0"
+                      aria-controls="panel--seo-link-section-tabbed-dense-grid--0" aria-selected="true"
+                      class="t1jiriwb srultre dir dir-ltr" role="tab">Popular</button><button type="button"
+                      id="tab--seo-link-section-tabbed-dense-grid--1"
+                      aria-controls="panel--seo-link-section-tabbed-dense-grid--1" aria-selected="false"
+                      class="t1jiriwb dir dir-ltr" role="tab" tabindex="-1">Arts &amp; culture</button><button
+                      type="button" id="tab--seo-link-section-tabbed-dense-grid--2"
+                      aria-controls="panel--seo-link-section-tabbed-dense-grid--2" aria-selected="false"
+                      class="t1jiriwb dir dir-ltr" role="tab" tabindex="-1">Outdoors</button><button type="button"
+                      id="tab--seo-link-section-tabbed-dense-grid--3"
+                      aria-controls="panel--seo-link-section-tabbed-dense-grid--3" aria-selected="false"
+                      class="t1jiriwb dir dir-ltr" role="tab" tabindex="-1">Mountains</button><button type="button"
+                      id="tab--seo-link-section-tabbed-dense-grid--4"
+                      aria-controls="panel--seo-link-section-tabbed-dense-grid--4" aria-selected="false"
+                      class="t1jiriwb dir dir-ltr" role="tab" tabindex="-1">Beach</button><button type="button"
+                      id="tab--seo-link-section-tabbed-dense-grid--5"
+                      aria-controls="panel--seo-link-section-tabbed-dense-grid--5" aria-selected="false"
+                      class="t1jiriwb dir dir-ltr" role="tab" tabindex="-1">Unique stays</button><button type="button"
+                      id="tab--seo-link-section-tabbed-dense-grid--6"
+                      aria-controls="panel--seo-link-section-tabbed-dense-grid--6" aria-selected="false"
+                      class="t1jiriwb dir dir-ltr" role="tab" tabindex="-1">Categories</button><button type="button"
+                      id="tab--seo-link-section-tabbed-dense-grid--7"
+                      aria-controls="panel--seo-link-section-tabbed-dense-grid--7" aria-selected="false"
+                      class="t1jiriwb dir dir-ltr" role="tab" tabindex="-1">Things to do</button></div>
+                </div>
+                <div class="tmtqv4g dir dir-ltr"></div>
+              </div>
+              <div>
+                <div class="t1krvce0 dir dir-ltr" role="tabpanel" id="panel--seo-link-section-tabbed-dense-grid--1"
+                  aria-labelledby="tab--seo-link-section-tabbed-dense-grid--0">
+                  <ul class="g1wukxve dir dir-ltr">
+                    <li><a class="i1451cs8 dir dir-ltr" href="/canmore-canada/stays/pet-friendly"
+                        data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Canmore</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Pet-friendly rentals</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/benalmadena-spain/stays" data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Benalmádena</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Holiday rentals</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/marbella-spain/stays/apartments"
+                        data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Marbella</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Flat rentals</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/mijas-spain/stays/apartments"
+                        data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Mijas</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Flat rentals</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/prescott-az/stays" data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Prescott</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Holiday rentals</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/scottsdale-az/stays/pools" data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Scottsdale</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Rentals with pools</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/tucson-az/stays/condos" data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Tucson</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Apartment rentals</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/jasper-ar/stays/cabins" data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Jasper</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Cabin rentals</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/mountain-view-ar/stays/houses"
+                        data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Mountain View</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">House rentals</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/devonport-australia/stays/cottages"
+                        data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Devonport</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Cottage rentals</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/mallacoota-australia/stays/pet-friendly"
+                        data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Mallacoota</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Pet-friendly rentals</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/ibiza-spain/stays" data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Ibiza</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Holiday rentals</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/anaheim-ca/stays/houses" data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Anaheim</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">House rentals</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/monterey-ca/stays/apartments"
+                        data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Monterey</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Flat rentals</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/paso-robles-ca/stays/cottages"
+                        data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Paso Robles</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Cottage rentals</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/santa-barbara-ca/stays/pet-friendly"
+                        data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Santa Barbara</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Pet-friendly rentals</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/sonoma-ca/stays" data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Sonoma</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Holiday rentals</div>
+                      </a></li>
+                    <li><button type="button" class="l1ovpqvx b1o258ke c13aok98 dir dir-ltr"><span>Show more</span><svg
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                          focusable="false"
+                          style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                          <path fill="none" d="M28 12 16.7 23.3a1 1 0 0 1-1.4 0L4 12"></path>
+                        </svg></button></li>
+                  </ul>
+                </div>
+
+                <div class="t1krvce0 dir dir-ltr" role="tabpanel" id="panel--seo-link-section-tabbed-dense-grid--2"
+                  aria-labelledby="tab--seo-link-section-tabbed-dense-grid--0">
+                  <ul class="g1wukxve dir dir-ltr">
+                    <li><a class="i1451cs8 dir dir-ltr" href="/canmore-canada/stays/pet-friendly"
+                        data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Canmore</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Pet-friendly rentals</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/benalmadena-spain/stays" data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Benalmádena</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Holiday rentals</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/marbella-spain/stays/apartments"
+                        data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Marbella</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Flat rentals</div>
+                      </a></li>
+
+                    <li><a class="i1451cs8 dir dir-ltr" href="/anaheim-ca/stays/houses" data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Anaheim</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">House rentals</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/mijas-spain/stays/apartments"
+                        data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Mijas</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Flat rentals</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/prescott-az/stays" data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Prescott</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Holiday rentals</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/scottsdale-az/stays/pools" data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Scottsdale</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Rentals with pools</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/tucson-az/stays/condos" data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Tucson</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Apartment rentals</div>
+                      </a></li>
+                    <li><a class="i1451cs8 dir dir-ltr" href="/jasper-ar/stays/cabins" data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Jasper</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Cabin rentals</div>
+                      </a></li>
+
+                    <li><a class="i1451cs8 dir dir-ltr" href="/mountain-view-ar/stays/houses"
+                        data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Mountain View</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">House rentals</div>
+                      </a></li>
+
+
+                    <li><a class="i1451cs8 dir dir-ltr" href="/devonport-australia/stays/cottages"
+                        data-no-client-routing="true">
+                        <div class="t1q5t6x1 t1okteu dir dir-ltr">Devonport</div>
+                        <div class="t1q5t6x1 d1rpr02g dir dir-ltr">Cottage rentals</div>
+                      </a></li>
+
+                    <li><button type="button" class="l1ovpqvx b1o258ke c13aok98 dir dir-ltr"><span>Show more</span><svg
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                          focusable="false"
+                          style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                          <path fill="none" d="M28 12 16.7 23.3a1 1 0 0 1-1.4 0L4 12"></path>
+                        </svg></button></li>
+
+                  </ul>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="l1g2ukzz dir dir-ltr">
+        <section class="se5ui3x dir dir-ltr">
+          <h3 class="trsc28b dir dir-ltr">Support</h3>
+          <ul class="l1qzr284 dir dir-ltr">
+            <li><a href="/help/home?from=footer" class="l1ovpqvx c1kblhex dir dir-ltr">Help
+                Centre</a></li>
+            <li><a href="/aircover" class="l1ovpqvx c1kblhex dir dir-ltr">AirCover</a>
+            </li>
+            <li><a href="/against-discrimination" class="l1ovpqvx c1kblhex dir dir-ltr">Anti-discrimination</a>
+            </li>
+            <li><a href="/accessibility" class="l1ovpqvx c1kblhex dir dir-ltr">Disability
+                support</a></li>
+            <li><a href="/help/article/2701/extenuating-circumstances-policy-and-the-coronavirus-covid19"
+                class="l1ovpqvx c1kblhex dir dir-ltr">Cancellation
+                options</a></li>
+            <li><a href="/neighbors" class="l1ovpqvx c1kblhex dir dir-ltr">Report
+                neighbourhood concern</a></li>
+          </ul>
+        </section>
+        <section class="se5ui3x dir dir-ltr">
+          <h3 class="trsc28b dir dir-ltr">Hosting</h3>
+          <ul class="l1qzr284 dir dir-ltr">
+            <li><a href="/host/homes?from_footer=1" class="l1ovpqvx c1kblhex dir dir-ltr">Airbnb
+                your home</a></li>
+            <li><a href="/aircover-for-hosts" class="l1ovpqvx c1kblhex dir dir-ltr">AirCover
+                for Hosts</a></li>
+            <li><a href="/resources" class="l1ovpqvx c1kblhex dir dir-ltr">Hosting
+                resources</a></li>
+            <li><a href="/help/community?s=footer" class="l1ovpqvx c1kblhex dir dir-ltr">Community
+                forum</a></li>
+            <li><a href="/help/responsible-hosting" class="l1ovpqvx c1kblhex dir dir-ltr">Hosting
+                responsibly</a></li>
+          </ul>
+        </section>
+        <section class="se5ui3x dir dir-ltr">
+          <h3 class="trsc28b dir dir-ltr">Airbnb</h3>
+          <ul class="l1qzr284 dir dir-ltr">
+            <li><a href="/press/news" class="l1ovpqvx c1kblhex dir dir-ltr">Newsroom</a>
+            </li>
+            <li><a href="/release" class="l1ovpqvx c1kblhex dir dir-ltr">New
+                features</a></li>
+            <li><a href="/careers" class="l1ovpqvx c1kblhex dir dir-ltr">Careers</a>
+            </li>
+            <li><a href="https://investors.airbnb.com" class="l1ovpqvx c1kblhex dir dir-ltr">Investors</a>
+            </li>
+            <li><a href="https://www.airbnb.org?locale=en" class="l1ovpqvx c1kblhex dir dir-ltr">Airbnb.org
+                emergency stays</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="l1g2ukzz lhg2ukzz">
+
+        <ul>
+          <li>© 2023 Airbnb, Inc.</li>
+          <li>Privacy </li>
+          <li>Terms</li>
+          <li>SitemapCompany</li>
+          <li>details</li>
+        </ul>
+
+        <ul>
+          <li id="glb"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.01978 0.25C10.0788 0.255298 12.0515 1.07763 13.5046 2.53638C14.9577 3.99512 15.7724 5.971 15.7698 8.03C15.7629 10.041 14.9746 11.9706 13.5713 13.4111C12.1681 14.8516 10.2599 15.6903 8.24977 15.75H7.99978C5.98872 15.7458 4.05806 14.96 2.61565 13.5586C1.17324 12.1573 0.332049 10.2501 0.269775 8.24V7.99C0.272425 5.93631 1.09011 3.96763 2.54323 2.51639C3.99635 1.06514 5.96608 0.249998 8.01978 0.25ZM9.96978 8.75H6.06978C6.21978 11.65 7.23978 14.09 7.94978 14.25H8.01978C8.69978 14.25 9.73978 11.88 9.94978 9.02L9.96978 8.75ZM14.2298 8.75H11.4698C11.3798 10.71 10.9398 12.53 10.2898 13.83C11.3037 13.4336 12.1967 12.7795 12.8807 11.9325C13.5646 11.0855 14.0158 10.0747 14.1898 9L14.2298 8.75ZM4.55978 8.75H1.81978C1.95579 9.87388 2.39403 10.9398 3.08785 11.8344C3.78166 12.729 4.70507 13.4186 5.75978 13.83C5.07271 12.3531 4.67876 10.757 4.59978 9.13L4.56978 8.75H4.55978ZM5.75978 2.17L5.63978 2.22C4.61244 2.64311 3.71622 3.33201 3.04314 4.21598C2.37005 5.09995 1.94437 6.14713 1.80978 7.25H4.55978C4.64978 5.42 5.03978 3.71 5.61978 2.44L5.75978 2.17ZM8.00978 1.75C7.30978 1.75 6.22978 4.26 6.06978 7.25H9.96978C9.81978 4.35 8.78978 1.91 8.07978 1.75H8.00978ZM10.2898 2.18L10.3198 2.23C11.0353 3.80947 11.4264 5.51655 11.4698 7.25H14.2198C14.0809 6.12971 13.6426 5.06757 12.951 4.17536C12.2594 3.28315 11.3401 2.59385 10.2898 2.18Z"
+                fill="#222222"></path>
+            </svg></li>
+          <li>English (IN)</li>
+          <li> ₹ INR </li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+              style="display:block;height:18px;width:18px;fill:currentColor" aria-label="Navigate to Facebook"
+              role="img" focusable="false">
+              <path d="M30 0a2 2 0 0 1 2 2v28a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"></path>
+              <path fill="#fff"
+                d="M22.94 16H18.5v-3c0-1.27.62-2.5 2.6-2.5h2.02V6.56s-1.83-.31-3.58-.31c-3.65 0-6.04 2.21-6.04 6.22V16H9.44v4.62h4.06V32h5V20.62h3.73z">
+              </path>
+            </svg></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+              style="display:block;height:18px;width:18px;fill:currentColor" aria-label="Navigate to Twitter" role="img"
+              focusable="false">
+              <path d="M32 4v24a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h24a4 4 0 0 1 4 4z"></path>
+              <path fill="#fff"
+                d="M18.66 7.99a4.5 4.5 0 0 0-2.28 4.88A12.31 12.31 0 0 1 7.3 8.25a4.25 4.25 0 0 0 1.38 5.88c-.69 0-1.38-.13-2-.44a4.54 4.54 0 0 0 3.5 4.31 4.3 4.3 0 0 1-2 .06 4.64 4.64 0 0 0 4.19 3.13A8.33 8.33 0 0 1 5.8 23a12.44 12.44 0 0 0 19.32-11.19A7.72 7.72 0 0 0 27.3 9.5a8.3 8.3 0 0 1-2.5.75 4.7 4.7 0 0 0 2-2.5c-.87.5-1.81.87-2.81 1.06a4.5 4.5 0 0 0-5.34-.83z">
+              </path>
+            </svg></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+              style="display:block;height:18px;width:18px;fill:currentColor" aria-label="Navigate to Instagram"
+              role="img" focusable="false">
+              <path d="M30 0H2a2 2 0 0 0-2 2v28c0 1.1.9 2 2 2h28a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path>
+              <path fill="#fff"
+                d="M15.71 4h1.25c2.4 0 2.85.02 3.99.07 1.28.06 2.15.26 2.91.56.79.3 1.46.72 2.13 1.38.6.6 1.08 1.33 1.38 2.13l.02.06c.28.74.48 1.58.54 2.8l.01.4c.05 1.02.06 1.63.06 4.4v.92c0 2.6-.02 3.05-.07 4.23a8.78 8.78 0 0 1-.56 2.91c-.3.8-.77 1.53-1.38 2.13a5.88 5.88 0 0 1-2.13 1.38l-.06.02c-.74.28-1.59.48-2.8.53l-.4.02c-1.02.05-1.63.06-4.4.06h-.92a73.1 73.1 0 0 1-4.23-.07 8.78 8.78 0 0 1-2.91-.56c-.8-.3-1.53-.77-2.13-1.38a5.88 5.88 0 0 1-1.38-2.13l-.02-.06a8.84 8.84 0 0 1-.54-2.8l-.01-.37A84.75 84.75 0 0 1 4 16.29v-1c0-2.62.02-3.06.07-4.24.06-1.26.26-2.13.55-2.88l.01-.03c.3-.8.77-1.53 1.38-2.13a5.88 5.88 0 0 1 2.13-1.38l.06-.02a8.84 8.84 0 0 1 2.8-.54l.37-.01C12.39 4 12.99 4 15.71 4zm.91 2.16h-1.24c-2.3 0-2.91.01-3.81.05l-.42.02c-1.17.05-1.8.25-2.23.41-.56.22-.96.48-1.38.9-.4.41-.67.8-.88 1.35l-.03.06a6.7 6.7 0 0 0-.4 2.2l-.02.45c-.04.9-.05 1.53-.05 3.94v1.08c0 2.64.02 3.05.07 4.23v.07c.06 1.13.25 1.74.42 2.16.21.56.47.96.9 1.38.4.4.8.67 1.34.88l.06.03a6.7 6.7 0 0 0 2.2.4l.45.02c.9.04 1.53.05 3.94.05h1.08c2.64 0 3.05-.02 4.23-.07h.07a6.51 6.51 0 0 0 2.16-.42c.52-.19.99-.5 1.38-.9.4-.4.67-.8.88-1.34l.03-.06a6.7 6.7 0 0 0 .4-2.2l.02-.45c.04-.9.05-1.53.05-3.94v-1.09c0-2.63-.02-3.04-.07-4.22v-.07a6.51 6.51 0 0 0-.42-2.16c-.19-.52-.5-.99-.9-1.38a3.7 3.7 0 0 0-1.34-.88l-.06-.03a6.63 6.63 0 0 0-2.16-.4l-.46-.02c-.9-.04-1.5-.05-3.8-.05zM16 9.84a6.16 6.16 0 1 1 0 12.32 6.16 6.16 0 0 1 0-12.32zM16 12a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm6.4-3.85a1.44 1.44 0 1 1 0 2.88 1.44 1.44 0 0 1 0-2.88z">
+              </path>
+            </svg></li>
+        </ul>
+
+      </div>
+
+    </footer>
+  </div>
+
+</body>
+
+</html>
